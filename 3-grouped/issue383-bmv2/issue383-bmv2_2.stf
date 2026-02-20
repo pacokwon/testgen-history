@@ -1,0 +1,5 @@
+add "main.ig.tns" "h.bvh1.row.alt1.valid":0x0 "local_metadata.col.bvh.row.alt0.valid":0x0 "do_act"()
+mirroring_add 1 16
+packet 0 000000000000
+expect 16 00000000$
+expect 0 
