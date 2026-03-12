@@ -18,4 +18,3 @@ export-all: merge
     rm -rf merged
     tar cvzf extended.tar.gz extended
     echo "Exported tests located in extended/v1model and extended/ebpf"
-
