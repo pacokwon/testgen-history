@@ -63,7 +63,7 @@ export-p4c: export-p4-16-samples export-p4-16-errors
 
 export-excludes:
     rm -rf testdata/excludes
-    cp -R excludes/ testdata/
+    cp -R ~/workspace/concrete/excludes testdata/
 
 export-all: export-p4c export-p4testgen
     tar czf testdata.tar.gz testdata
