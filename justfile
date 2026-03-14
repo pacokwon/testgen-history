@@ -61,6 +61,9 @@ export-p4c: export-p4-16-samples export-p4-16-errors
     grep -rlE 'include <ebpf_model\.p4>|include "ebpf_model\.p4"' p4c/testdata/p4_16_samples \
         | while read p4file; do if [ -f "${p4file%.p4}.stf" ]; then cp "$p4file" "${p4file%.p4}.stf" $ROOT/ebpf; fi; done
 
+export-excludes:
+    rm -rf testdata/excludes
+    cp -R excludes/ testdata/
 
 export-all: export-p4c export-p4testgen
     tar czf testdata.tar.gz testdata
