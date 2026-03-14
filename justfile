@@ -65,6 +65,6 @@ export-excludes:
     rm -rf testdata/excludes
     cp -R ~/workspace/concrete/excludes testdata/
 
-export-all: export-p4c export-p4testgen
+export-all: export-p4c export-p4testgen export-excludes
     tar czf testdata.tar.gz testdata
     git add testdata.tar.gz
